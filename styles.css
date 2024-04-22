@@ -1,0 +1,245 @@
+
+        *{
+            margin: 10;
+            padding: 10;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+            background-color:white;
+            
+        } 
+
+        .menu-container {
+            color: #000000;
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+        }
+       
+        h1 { 
+        text-align: center;
+        color: darkgoldenrod;
+        border: 2px darkblue solid
+        }
+        
+        h2 {
+        background-color: rgb(67, 94, 146);
+        color: blue;
+        margin: 10 
+        } 
+
+        h3 {
+        color: rgb(30, 58, 58);
+        }
+        
+        .orta {
+            font-size: 16;
+            background-color:rgb(213, 206, 187) ;
+            text-align: center;
+            color: black;
+            font-style: italic;
+            font-family:Arial, Helvetica, sans-serif;
+            
+        }
+
+        .baslık {
+        font-size: 80px;
+        text-align: left;
+        }
+
+        .forty{ 
+        width: 400px;
+        font-size: 45px;
+        text-align: center;
+        }
+
+        #denemeanabaslik{
+        background-color: rgb(255, 255, 255);
+        text-align: center; color: black; 
+        font-size: 50px; 
+        font-family:Arial, Helvetica, sans-serif;
+        font-style: italic;
+    position: top;
+}
+
+        #image{
+            width: 50%; 
+            border: 5px rgb(0, 0, 0) solid;
+            
+        }
+
+        .links {
+            border: 1px solid;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .login {
+            margin-left: 20px;
+        }
+        .menu {
+            display:flex ;
+            justify-content: space-between;
+        }
+
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 300px;
+        }
+        .flex-container2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 200px;
+            text-align: center;
+        }
+        .flex-item {
+            flex: 1;
+            align-self: center;
+            order: 2;
+            text-align: center;
+        }
+        
+       .header-container {
+        color: rgb(170, 170, 137);
+        background-color:rgb(213, 206, 187);
+        display: flex;
+        justify-content: center;
+
+        
+       }
+       
+       .header {
+        background-color:rgb(255, 255, 255);
+        width: 1500px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        
+       }
+
+       .photo-grid-container {
+        display:flex;
+        justify-content: space-between;
+;
+       }
+
+       .photo-grid {
+        width: 2500px;
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;;
+       }
+       .photo-grid-item {
+        border: 1px solid #fff;
+        width: 500px;
+        height: 500px;
+       }
+
+       .logo {
+        scale: 70%;
+        justify-content: center;
+       }
+
+       .social {
+        display: flex;
+        justify-content: end;
+        scale: 80%;
+       }
+
+       .proje {
+        scale: 1;
+        border: 1px solid #fff;
+        width: 500px;
+        height: 500px;
+        display:flex;
+        justify-content:wrap;
+        align-content: center;
+        
+       }
+
+       .box {
+        text-align: center;
+        box-shadow: inset;
+        justify-content: center;
+        flex: auto;
+       }
+
+.centerfooter {
+    text-align: center;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+  }
+  .navbar a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .logo{
+    margin-left: 30px;
+    font-weight: 500;
+  }
+  .list{
+    list-style: none;
+    display: flex;
+    gap:30px;
+    color: #fff;
+    margin-right: 30px;
+  }
+  
+  #toggler,.navbar label{
+    color: #ffffff;
+    display: none;
+  }
+  
+  @media screen and
+  (max-width: 600px){
+    .menu{
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+    }
+    .logoo{
+      margin-left: 0px;
+      scale: 0.6;
+    }
+    .list{
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .navbar label{
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    #toggler:checked ~ .menu{
+      max-height: 100%;
+    }
+  }
+
+  address {
+    display: block;
+    font-style: italic;
+    text-align: center;
+  }
+
+   
+
+
+
+
+  
