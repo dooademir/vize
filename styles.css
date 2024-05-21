@@ -37,7 +37,7 @@
             background-color:rgb(213, 206, 187) ;
             text-align: center;
             color: black;
-            font-style: italic;
+           
             font-family:Arial, Helvetica, sans-serif;
             
         }
@@ -173,6 +173,9 @@
 .centerfooter {
     text-align: center;
 }
+.italic {
+  font-style: italic;
+}
 
 .navbar{
     display: flex;
@@ -237,6 +240,11 @@
     text-align: center;
   }
 
+  .newDiv {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px;
+  }
    
 
 

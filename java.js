@@ -72,3 +72,38 @@ if(score>=70) {
 } else {
     console.log ("Başarısız")
 }
+
+let aa= document.getElementById('aylin');
+let bb= document.getElementsByClassName('ortala');
+let cc= document.getElementsByTagName('div');
+
+
+console.log(aa)
+console.log(bb)
+console.log(cc)
+
+aa.innerHTML= 'Projeler!'
+
+function changeImageSource() {
+    let myImage=document.getElementById('myImg');
+
+let newImageSource ='DD.png';
+myImage.setAttribute('src',newImageSource);
+myImage.setAttribute('alt',"DD");
+}
+
+
+
+
+function additalic() {
+    let myParagraph =document.getElementById('aylin');
+    myParagraph.classList.add('italic');
+}
+
+
+function createNewDiv() {
+    let newDiv= document.createElement('div');
+    newDiv.classList.add('newDiv');
+    newDiv.textContent= 'This is  dynamically crated div!';
+    document.body.appendChild(newDiv);
+}
