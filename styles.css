@@ -3,6 +3,9 @@
             margin: 10;
             padding: 10;
             box-sizing: border-box;
+            scrollbar-width: thin;
+            scrollbar-color: pink
+            ;
         }
         body {
             width: 100%;
@@ -249,5 +252,147 @@
 
 
 
+  .photo-grid-item {
+    margin: 5px;
+    width: 299px;
+    height: 299px;
+    overflow: hidden;
+  }
 
+  .photo-grid-container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding-bottom: 0px;
+    overflow: hidden;
+  flex-wrap: wrap;
+    padding-top: 10px;
+  }
+
+
+
+  .photo-grid {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-self: center;
+   }
+
+   .photo-grid-container-main {
+     display: flex;
+     justify-content: center;
+     align-self: center;
+     padding-bottom: 0px;
+     overflow: hidden;
+     flex-wrap: wrap;
+     max-width: 100%;
+     height: auto;
+     margin: auto;
+     flex-direction: row;
+     padding-top: 50px;
+   }
+
+   .photo-grid-main {
+     padding-top: 0px;
+     max-width: 100%;
+     height: auto;
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     flex-direction: row;
+     align-self: center;
+    }
+
+    .photo-grid-item-main {
+
+  width: 299px;
+    height: 298px;
+      overflow: hidden;
+    }
+
+
+  a.photo-grid-item-main img {
+    width: 299px;
+      height: 298px;
+  object-position: top;
+  object-fit: cover;
+  }
+
+  a.photo-grid-item-main img:hover {
+    width: 299px;
+      height: 298px;
+     object-fit: cover;
+    object-position: bottom;
+  }
+
+
+
+  .navMenu {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
   
+  .navMenu a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    width: 80px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .navMenu a:hover {
+    color: #02802c;
+  }
+  
+  .navMenu .dot {
+    width: 6px;
+    height: 6px;
+    background: #000000;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .navMenu a:nth-child(1):hover ~ .dot {
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .navMenu a:nth-child(2):hover ~ .dot {
+    -webkit-transform: translateX(110px);
+    transform: translateX(110px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .navMenu a:nth-child(3):hover ~ .dot {
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .navMenu a:nth-child(4):hover ~ .dot {
+    -webkit-transform: translateX(285px);
+    transform: translateX(285px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
