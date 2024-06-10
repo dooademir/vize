@@ -25,11 +25,7 @@
         border: 2px darkblue solid
         }
         
-        h2 {
-        background-color: rgb(67, 94, 146);
-        color: blue;
-        margin: 10 
-        } 
+       
 
         h3 {
         color: rgb(30, 58, 58);
@@ -180,20 +176,8 @@
   font-style: italic;
 }
 
-.navbar{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #1a1a1a;
-    padding: 15px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-  }
-  .navbar a{
-    text-decoration: none;
-    color: #fff;
-  }
+
+
   .logo{
     margin-left: 30px;
     font-weight: 500;
@@ -331,7 +315,7 @@
 
   .navMenu {
     position: fixed;
-    top: 50%;
+    top: 2%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -342,9 +326,9 @@
     text-decoration: none;
     font-size: 1.2em;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 300;
     display: inline-block;
-    width: 80px;
+    width: 150px;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
@@ -357,31 +341,15 @@
     width: 6px;
     height: 6px;
     background: #000000;
-    border-radius: 50%;
+    border-radius: 70%;
     opacity: 0;
-    -webkit-transform: translateX(30px);
-    transform: translateX(30px);
+    -webkit-transform: translateX(150px);
+    transform: translateX(150px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
   
   .navMenu a:nth-child(1):hover ~ .dot {
-    -webkit-transform: translateX(30px);
-    transform: translateX(30px);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
-  
-  .navMenu a:nth-child(2):hover ~ .dot {
-    -webkit-transform: translateX(110px);
-    transform: translateX(110px);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
-  
-  .navMenu a:nth-child(3):hover ~ .dot {
     -webkit-transform: translateX(200px);
     transform: translateX(200px);
     -webkit-transition: all 0.2s ease-in-out;
@@ -389,10 +357,129 @@
     opacity: 1;
   }
   
-  .navMenu a:nth-child(4):hover ~ .dot {
-    -webkit-transform: translateX(285px);
-    transform: translateX(285px);
+  .navMenu a:nth-child(2):hover ~ .dot {
+    -webkit-transform: translateX(250px);
+    transform: translateX(250px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 1;
+  }
+  
+  .navMenu a:nth-child(3):hover ~ .dot {
+    -webkit-transform: translateX(250px);
+    transform: translateX(250px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .navMenu a:nth-child(4):hover ~ .dot {
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+
+
+
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .active {
+    background-color: #8ba3e5;
+    color: white;
+  }
+
+
+
+
+
+  
+  .containerr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .contact-info {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .contact-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .contact-form {
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  .form-group textarea {
+    height: 150px;
+  }
+  .form-group button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .form-group button:hover {
+    background-color: #45a049;
+  }
+  .map {
+    flex: 1;
+    max-width: 400px;
+    height: 300px;
   }

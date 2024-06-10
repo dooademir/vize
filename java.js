@@ -107,3 +107,72 @@ function createNewDiv() {
     newDiv.textContent= 'This is  dynamically crated div!';
     document.body.appendChild(newDiv);
 }
+
+
+const menuItems = document.querySelectorAll('.navbar a');
+
+menuItems.forEach(item => {
+  item.addEventListener('mouseover', function() {
+    this.style.backgroundColor = '#555'; // Üzerine gelindiğinde arka plan rengini değiştir
+  });
+
+  item.addEventListener('mouseout', function() {
+    this.style.backgroundColor = ''; // Fare çekildiğinde arka plan rengini eski haline getir
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+  // Harita Kodu
+  function initMap() {
+    var istanbul = {lat: 41.0082, lng: 28.9784}; // İstanbul koordinatları
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 12,
+      center: istanbul
+    });
+    var marker = new google.maps.Marker({
+      position: istanbul,
+      map: map,
+      title: 'İstanbul'
+    });
+  }
+
+  // Form Gönderme İşlevselliği
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Formun sayfayı yenilemesini engelle
+
+    // Form verilerini al
+    var formData = new FormData(this);
+
+    // Form verilerini göndermek için AJAX isteği oluştur
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'form_gonder.php'); // Form verilerini işleyecek olan sunucu tarafı dosyasının yolu
+
+    // Sunucudan yanıt alındığında çalışacak olan fonksiyon
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+        // Sunucudan gelen yanıtı burada işleyebilirsiniz
+        console.log(xhr.responseText);
+        alert('Mesajınız başarıyla gönderildi!');
+        document.getElementById('contact-form').reset(); // Formu temizle
+      } else {
+        // Sunucudan bir hata aldıysanız burada işleyebilirsiniz
+        console.error('Form gönderilirken bir hata oluştu.');
+        alert('Mesaj gönderilirken bir hata oluştu. Lütfen tekrar deneyin.');
+      }
+    };
+
+    // Form verilerini gönder
+    xhr.send(formData);
+  });
+
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"> </script>
