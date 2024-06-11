@@ -109,17 +109,7 @@ function createNewDiv() {
 }
 
 
-const menuItems = document.querySelectorAll('.navbar a');
 
-menuItems.forEach(item => {
-  item.addEventListener('mouseover', function() {
-    this.style.backgroundColor = '#555'; // Üzerine gelindiğinde arka plan rengini değiştir
-  });
-
-  item.addEventListener('mouseout', function() {
-    this.style.backgroundColor = ''; // Fare çekildiğinde arka plan rengini eski haline getir
-  });
-});
 
 
 
@@ -174,5 +164,3 @@ menuItems.forEach(item => {
     xhr.send(formData);
   });
 
-
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"> </script>
