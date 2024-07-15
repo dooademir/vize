@@ -405,6 +405,7 @@
     color: white;
   }
 
+  
 
 
 
@@ -486,4 +487,118 @@
 
 
 
+  .slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+  }
   
+  .slide {
+    display: none;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Optional: Add responsive styles */
+  @media screen and (max-width: 1000px) {
+    .prev, .next {
+      font-size: 15px;
+    }
+  }
+
+
+  
+
+
+
+
+  
+  .containerrrr {
+    padding: 20px;
+  }
+  
+  .flex-containerrrr {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .photo-containerrrr {
+    max-width: 300px;
+    margin-right: 20px;
+    overflow: hidden; /* Fotoğrafın taşmasını önlemek için */
+  }
+  
+  .photo-containerrrr img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out; /* Geçiş efekti */
+  }
+  
+  .photo-containerrrr img:hover {
+    transform: scale(1.1); /* Yakınlaştırma efekti */
+  }
+  
+  .text-container {
+    flex: 1;
+  }
+  
+  .interests ul {
+    list-style-type: square;
+    margin-left: 20px;
+  }
+
+
+
+
+
+  
+  
+  .related-links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .related-links li {
+    margin-bottom: 10px;
+  }
+  
+  .related-links li a {
+    color: #666;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+  }
+  
+  .related-links li a:hover {
+    text-decoration: underline;
+    background-color: yellow; /* Sarı arka plan */
+  }
